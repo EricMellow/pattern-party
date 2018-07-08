@@ -4,56 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pattern Party</title>
+  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+  <title>Pattrn Party</title>
 </head>
 <body>
-  <header>
-    <h1>Pattern Party</h1>
-    <p>Eric Jungbluth</p>
+  <header class="main-header">
+    <h1>Pattrn <span>Party</span></h1>
+    <p class="name">Eric Jungbluth</p>
   </header>
   
-  <div>
+  <div class="section-divider">
     <h3>Accordian Tabs</h3>
-    <hr>
+    <hr class="hr-divider">
   </div>
 
   <section class="accordian-tabs">
     <header>
-      <button>Tab 1</button>
-      <button>Tab 2</button>
-      <button>Tab 3</button>
-      <button>Tab 4</button>
+      <button class="tabs tab1 tab-active">Tab 1</button>
+      <button class="tabs tab2">Tab 2</button>
+      <button class="tabs tab3">Tab 3</button>
+      <button class="tabs tab4">Tab 4</button>
     </header>
-    <article>
-      <h5></h5>
-      <img src="" alt="">
+    <article class="accordian-article-visible">
+      <img src="http://fpoimg.com/250x300" alt="placeholder image">
+      <h5>Moby-Dick or, The Whale</h5>
       <hr>
-      <p></p>
+      <p>“All men live enveloped in whale-lines. All are born with halters round their necks; but it is only when caught in the swift,
+      sudden turn of death, that mortals realize the silent, subtle, ever-present perils of life. And if you be a philosopher,
+      though seated in the whale-boat, you would not at heart feel one whit more of terror, than though seated before your evening
+      fire with a poker, and not a harpoon, by your side.”</p>
     </article>
-    <article>
-      <h5></h5>
-      <img src="" alt="">
+    <article class="accordian-article-hidden">
+      <img src="http://fpoimg.com/250x300" alt="placeholder image">
+      <h5>Everything Is Illuminated</h5>
       <hr>
-      <p></p>
+      <p>“How did she end up here, like this? How could there have been so much - so many moments, so many people and things, so many
+      razors and pillows, timepieces and subtle coffins - without her being aware? How did her life live itself without her?”</p>
     </article>
-    <article>
-      <h5></h5>
-      <img src="" alt="">
+    <article class="accordian-article-hidden">
+      <img src="http://fpoimg.com/250x300" alt="placeholder image">
+      <h5>Slaughterhouse-Five</h5>
       <hr>
-      <p></p>
+      <p>“America is the wealthiest nation on Earth, but its people are mainly poor, and poor Americans are urged to hate themselves....
+      It is in fact a crime for an American to be poor, even though America is a nation of poor. Every other nation has folk traditions
+      of men who were poor but extremely wise and virtuous, and therefore more estimable than anyone with power and gold. No such
+      tales are told by American poor. They mock themselves and glorify their betters.”</p>
     </article>
-    <article>
-      <h5></h5>
-      <img src="" alt="">
+    <article class="accordian-article-hidden">
+      <img src="http://fpoimg.com/250x300" alt="placeholder image">
+      <h5>Walden</h5>
       <hr>
-      <p></p>
+      <p>“However mean your life is, meet and live it; do not shun it and call it hard names. It is not so bad as you are. It looks
+      poorest when you are richest. The fault-finder will find faults even in paradise. Love your life, poor as it is. You may
+      perhaps have some pleasant, thrilling, glorious hours, even in a poorhouse. The setting sun is reflected from the windows
+      of the almshouse as brightly as from the rich man’s abode; the snow melts before its doors as early in the spring.”</p>
     </article>
-    <button>View Code</button>
   </section>
+  <button class="view-btn">View Code</button>
 
-  <div>
+  <div class="section-divider">
     <h3>Flexible Cards</h3>
-    <hr>
+    <hr class="hr-divider">
   </div>
 
   <section>
@@ -85,12 +98,12 @@
       <h5></h5>
       <img src="" alt="">
     </article>
-    <button>View Code</button>
+    <button class="view-btn">View Code</button>
   </section>
   
-  <div>
-    <h3>Flexible Cards</h3>
-    <hr>
+  <div class="section-divider">
+    <h3>Header Bar</h3>
+    <hr class="hr-divider">
   </div>
 
   <section>
@@ -101,7 +114,7 @@
       <a href=""></a>
       <input type="text" name="" id="">
     </header>
-    <button>View Code</button>
+    <button class="view-btn">View Code</button>
   </section>
 </body>
 </html>
