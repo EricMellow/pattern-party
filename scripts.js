@@ -12,6 +12,7 @@ function toggleActive(event) {
   event.preventDefault();
   const tab = $(this).attr('class').split(' ')[0]
   toggleTab(tab);
+  toggleArticle(tab)
 }
 
 function toggleTab(tab) {
@@ -19,4 +20,13 @@ function toggleTab(tab) {
   deactivateTab.toggleClass('tab-active')
   const activateTab = $(`.${tab}`)
   activateTab.toggleClass('tab-active')
+}
+
+function toggleArticle(tab) {
+const deactivateArticle = $('.article-visible')
+deactivateArticle.toggleClass('article-visible')
+const articleNumber = tab.split('')[3]
+console.log(articleNumber)
+const activateArticle = $(`.article${articleNumber}`)
+activateArticle.toggleClass('article-visible')
 }
