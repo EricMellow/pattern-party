@@ -7,6 +7,10 @@ html {
   box-sizing: inherit;
 }
 
+button:focus {
+  outline:0;
+}
+
 .main-header {
   height: 40px;
   background-color: #3F3244;
