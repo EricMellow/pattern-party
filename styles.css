@@ -75,7 +75,7 @@ h3 {
 
 .accordian-tabs {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  /* grid-template-columns: 25% 25% 25% 25%; */
   width: 75%;
   margin: 0 auto;
 }
@@ -117,10 +117,11 @@ h3 {
     border-right: solid 1px #666666;
     border-left: solid 1px #666666;
     border-bottom: solid 1px #666666;
+    
 }
 
 .article-visible img {
-      margin: 15px 0 15px 15px;
+    /* margin: 15px 0 15px 15px; */
     grid-row-start: 1;
     grid-row-end: span 4;
 }
@@ -146,10 +147,12 @@ h5 {
 
 .article-visible p {
   grid-column-start: 2;
-    grid-column-end: span 5;
-    margin: 5px 25px;
-    width: 90%;
-    line-height: 150%;
+  grid-column-end: span 5;
+  margin: 5px 25px;
+  width: 87%;
+  line-height: 150%;
+  max-height: 227px;
+  overflow-y: scroll
 }
 
 .tabs {
@@ -168,4 +171,72 @@ h5 {
   border-top: solid 1px #666666;
   border-right: solid 1px #666666;
   border-bottom: none;
+}
+
+@media (max-width: 675px) {
+
+  .accordian-tabs {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+  .accordian-tabs header {
+  width: 100%;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-visible {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 80px 250px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: solid 1px #666666;
+    border-left: solid 1px #666666;
+    border-bottom: solid 1px #666666;
+}
+
+.article-visible img {
+    margin: 15px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
+    grid-auto-flow: dense;
+}
+
+h5 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-left: 26px;
+    margin-top: 30px;
+    grid-auto-flow: dense;
+}
+
+.article-visible hr {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    margin-top: 60px;
+    height: 0;
+    width: 90%;
+    grid-column-end: span 1;
+}
+
+.article-visible p {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    /* margin: 5px 25px; */
+    width: 90%;
+    line-height: 150%;
+    grid-row-start: 3;
+    grid-auto-flow: dense;
+}
+
 }
