@@ -75,7 +75,7 @@ h3 {
 
 .accordian-tabs {
   display: grid;
-  /* grid-template-columns: 25% 25% 25% 25%; */
+  grid-template-columns: 25% 25% 25% 25%;
   width: 75%;
   margin: 0 auto;
 }
@@ -121,7 +121,7 @@ h3 {
 }
 
 .article-visible img {
-    /* margin: 15px 0 15px 15px; */
+    margin: 15px 0 15px 15px;
     grid-row-start: 1;
     grid-row-end: span 4;
 }
@@ -173,35 +173,71 @@ h5 {
   border-bottom: none;
 }
 
+.flex-cards h5 {
+  margin: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.flex-cards {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.flexcards-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flexcards-container img {
+      width: 100%;
+    border-top: 1px solid #666666;
+    object-fit: cover;
+    height: 220px;
+  }
+  
+  .flexcards-container article {
+    margin: 10px;
+    border: 1px solid #666666;
+    overflow: hidden;
+}
+
+.flex-article1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.flex-article-small h5 {
+  max-width: 234px;
+}
+
+.flex-article7 {
+  grid-column-start: 2;
+    grid-column-end: 4;
+}
+
 @media (max-width: 675px) {
 
   .accordian-tabs {
-    width: 75%;
-    margin: 0 auto;
     display: block;
 }
 
   .accordian-tabs header {
-  width: 100%;
-    display: grid;
     display: flex;
     flex-direction: column;
 }
 
 .article-visible {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 80px 250px;
-    grid-column-start: 1;
     grid-column-end: 2;
-    border-right: solid 1px #666666;
-    border-left: solid 1px #666666;
-    border-bottom: solid 1px #666666;
 }
 
 .article-visible img {
     margin: 15px;
-    grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -214,18 +250,12 @@ h5 {
     grid-column-end: span 2;
     grid-row-start: 2;
     grid-row-end: 2;
-    margin-left: 26px;
-    margin-top: 30px;
     grid-auto-flow: dense;
 }
 
 .article-visible hr {
     grid-row-start: 2;
     grid-column-start: 1;
-    grid-row-end: 2;
-    margin-top: 60px;
-    height: 0;
-    width: 90%;
     grid-column-end: span 1;
 }
 
@@ -237,6 +267,11 @@ h5 {
     line-height: 150%;
     grid-row-start: 3;
     grid-auto-flow: dense;
+}
+
+.flexcards-container {
+  display: flex;
+    flex-direction: column;
 }
 
 }
