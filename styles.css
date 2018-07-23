@@ -57,6 +57,7 @@ h3 {
 .view-btn-div {
   display: flex;
 }
+
 .view-btn {
   background-color: #2F2235;
   color: #f2f2f2;
@@ -255,13 +256,12 @@ h5 {
   display: none;
 }
 
-.dropdown {
-  background: #e8e8e8;
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.view-btn a {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 @media (max-width: 675px) {
@@ -318,7 +318,7 @@ h5 {
     flex-direction: column;
 }
 
-.nav-bar a {
+.nav-bar-header a {
   display: none;
 }
 
@@ -352,7 +352,26 @@ h5 {
     margin: 15px
 }
 
+
+.dropdown {
+  background: #e8e8e8;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hidden {
   display: none;
 }
+
+.view-btn a {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 }
