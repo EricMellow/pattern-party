@@ -219,6 +219,51 @@ h5 {
     grid-column-end: 4;
 }
 
+.nav-bar header {
+  background-color: #d1d2d3;
+    height: 100px;
+    width: 75%;
+    margin: 0 auto;
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-bar a {
+  font-size: 1.5rem;
+    text-decoration: none;
+    color: #666666;
+}
+
+.nav-bar input {
+  height: 3rem;
+    font-size: 1.5rem;
+    width: 22%;
+    padding-left: 10px;
+}
+
+.nav-bar img {
+  height: 75px;
+    display: none;
+}
+
+.nav-bar h3 {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.dropdown {
+  background: #e8e8e8;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (max-width: 675px) {
 
   .accordian-tabs {
@@ -262,7 +307,6 @@ h5 {
 .article-visible p {
     grid-column-start: 1;
     grid-column-end: span 1;
-    /* margin: 5px 25px; */
     width: 90%;
     line-height: 150%;
     grid-row-start: 3;
@@ -274,4 +318,41 @@ h5 {
     flex-direction: column;
 }
 
+.nav-bar a {
+  display: none;
+}
+
+.nav-bar input {
+  display: none;
+}
+
+.nav-bar h3 {
+  display: block;
+  font-size: 2rem;
+}
+
+.nav-bar img {
+  display: block;
+}
+
+.dropdown a {
+  font-size: 1.5rem;
+    text-decoration: none;
+    color: #666666;
+    display: block;
+    margin: 20px;
+}
+
+.dropdown input {
+  height: 3rem;
+    font-size: 1.5rem;
+    width: 95%;
+    padding-left: 10px;
+    display: block;
+    margin: 15px
+}
+
+.hidden {
+  display: none;
+}
 }
