@@ -264,11 +264,31 @@ h5 {
   text-decoration: none;
 }
 
+#mobile {
+  display: none;
+}
+
 @media (max-width: 675px) {
 
   .accordian-tabs {
     display: block;
 }
+
+  .tabs {
+    border: solid 1px #666666;
+  }
+
+  .tab-active {
+    border: solid 1px #666666;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #full {
+    display: none;
+  }
 
   .accordian-tabs header {
     display: flex;
